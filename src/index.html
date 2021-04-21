@@ -1,57 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header class="logo">
-      <img src="./Imagen/logo_lol.png" />
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <nav>
-      <!-- la barra de navegacion -->
-      <section class="bar">
-        <input type="search" name="Buscar" placeholder="Buscar" />
-        <input type=""/>
-        <input type="button"/>
-      </section>
-    </nav>
+<body>
+  <header class="logo">
+    <img src="./Imagen/logo_lol.png" />
+  </header>
 
-    <section class="typChamp">
-      <button class="Asesino"> ASESINOS</button>
-      <!--en CSS: .button1 {border-radius: 12px;}-->
-      <button class="Luchador"> LUCHADORES</button>
-      <!--en CSS: .button2 {border-radius: 12px;}-->
-      <button class="Mago"> MAGOS</button>
-      <!--en CSS: .button3 {border-radius: 12px;}-->
-      <button class="Tirador"> TIRADORES</button>
-      <!--en CSS: .button4 {border-radius: 12px;}-->
-      <button class="Soporte"> SOPORTES</button>
-      <!--en CSS: .button5 {border-radius: 12px;}-->
-      <button class="Tanque"> TANQUES</button>
-      <!--en CSS: .button6 {border-radius: 12px;}-->
+  <nav>
+    <!-- la barra de navegacion -->
+    <section class="navegation">
+      <input type="search" name="Buscar" placeholder="Buscar" />
+      <input type="" />
+      <input type="button" id= "reset" name="Restablecer" />
     </section>
+  </nav>
 
-    <div id="root"></div>
+  <section class="typ-champ">
+    <button id="assassin"> ASESINOS </button>
+    <button id="fighter"> LUCHADORES</button>
+    <button id="mage"> MAGOS </button>
+    <button id="marksman"> TIRADORES </button>
+    <button id="support"> SOPORTES </button>
+    <button id="tank"> TANQUES </button>
+  </section>
 
-    <footer>
-      <div class="links">
-        ¿Quieres aprender a jugar?:
-        <a href="https://lan.leagueoflegends.com/es-mx/champions/"
-          >https://lan.leagueoflegends.com</a
-        >
-        A jugar!
-        <a href="https://signup.lan.leagueoflegends.com/es/signup/index#/"
-          >https://lan.leagueoflegends.com/es</a
-        >
-        -Derechos reservados Riot Games, League of Legends y PvP.net.-
-      </div>
-    </footer>
+  <div id="root"></div>
 
-    <script src="main.js" type="module"></script>
-  </body>
+  <footer>
+    <div class="links">
+      ¿Quieres aprender a jugar?:
+      <a href="https://lan.leagueoflegends.com/es-mx/champions/">https://lan.leagueoflegends.com</a>
+      A jugar!
+      <a href="https://signup.lan.leagueoflegends.com/es/signup/index#/">https://lan.leagueoflegends.com/es</a>
+      -Derechos reservados Riot Games, League of Legends y PvP.net.-
+    </div>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
-
