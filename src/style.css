@@ -1,22 +1,30 @@
 body {
     background-image: url("./imagen/imagen_fondo.jpg"); 
-  }
+    background-repeat: no-repeat;
+    background-size: cover; /*ajusta el fondo */
+}
 
  footer {
   background-color:#373736;
   padding: 15px;
-  position:fixed;
   bottom: 0;
   width: 100%;
   color:cornsilk;
   }
  
-button {
- position: relative;
- border-radius: 12px;
- background-color: #00CED1;
- color: cornsilk;
- text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.411); 
+button{
+  position: relative;
+  border-radius: 12px;
+  background-color: #2a8586;
+  color: cornsilk;
+  padding: 10px 32px; ;
+  text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.658); 
+  transition: transform .2s; /* tiempo en que demora en agrandarse */
+}
+
+button:hover{
+  -ms-transform: scale(1.5);
+  transform: scale(1.5)
 }
 
  .logo {
@@ -33,6 +41,24 @@ button {
   padding: 15px;
   }
 
+  .buttons-nav{
+    border-radius: 12px;
+    padding: 8px 25px;
+    width: 150px;
+  }
+  
+ .buttons-nav::hover{
+   background-color: rgba(255,255,255,0.50);
+ }
+
+ p {
+  color: cornsilk;
+  text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.658);
+  cursor: pointer;
+  } 
+  
+
+
 .links {
   display: flex;
   align-items: center;
@@ -46,12 +72,10 @@ button {
   justify-content: space-between;
 }
 
-
 .champ-container{
  padding: 10px;
  margin: 20px;
- /* background-color: rgb(34, 34, 228); */
- /* border-radius: 50%; */
+ cursor: pointer;
 }
 
 .img-container{
@@ -59,7 +83,60 @@ border-radius: 50%;
 }
 
 #root {
+ width: 100%;
  background-color:rgba(65, 71, 77, 0.5); 
  display: flex;
  flex-wrap: wrap;
 }
+
+
+.div-container{ 
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+  overflow-y: scroll;
+}
+
+.div-container::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+  display: none;
+} 
+
+.img-modal {
+display: block;
+margin: auto;
+width:900px;
+}
+
+.title-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #FFD700;
+  text-transform: capitalize;
+}
+
+.blurb-modal{
+  background-color: #2686887e;
+    color:cornsilk;
+    position: absolute;
+    top: 23%;
+    left: -30%;
+    transform: translate(50%,169%);
+    font-size: 20px;
+    width: 607px;
+    height: 158px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {display: none;}
+
+.info{
+  color: cornsilk;
+}
+

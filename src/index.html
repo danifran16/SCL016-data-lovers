@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <title>Data Lovers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -15,9 +17,12 @@
   <nav>
     <!-- la barra de navegacion -->
     <section class="navegation">
-      <input type="search" name="Buscar" placeholder="Buscar" />
-      <input type="" />
-      <input type="button" id= "reset" name="Restablecer" />
+      <input type="search" name="Buscar" placeholder="Busca tu campeon" class="buttons-nav" />
+      <select class="buttons-nav" name="a-z" id="selectOrder">
+        <option value="A-Z">Ordenar A-Z</option>
+        <option value="Z-A">Ordenar Z-A</option>
+      </select>
+      <input type="button" id="reset" value="Mostrar Todo" class="buttons-nav" />
     </section>
   </nav>
 
@@ -46,3 +51,10 @@
 </body>
 
 </html>
+
+
+
+
+
+
+<img class="img-container">

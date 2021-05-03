@@ -1,9 +1,26 @@
-// estas funciones son de ejemplo
-
-export const example = () => {
-  return 'example';
+//////Funciones limpieza////////
+export const cleanScreenOfChampions = () => {
+  document.getElementById('root').innerHTML = '';
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+
+
+
+
+////////funcion orden alfabetico/////////
+ 
+// export const dataAZ = () => {
+//   dataChampions.sort((a,b)=>{
+//   if(a.name > b.name){
+//       return 1;
+//   }
+//   if(a.name < b.name){
+//       return -1;
+//   }
+//   return 0;
+// })};
+
+
+
+
+
