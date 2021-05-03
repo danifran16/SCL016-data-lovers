@@ -142,7 +142,6 @@ const dataAZ = dataChampions.sort((a, b) => {
   });
 
  /* 
-
 // boton search
 let buttonSearch = document.getElementById("input-name-champion");
 buttonSearch.addEventListener("click", () => {
@@ -152,7 +151,6 @@ cleanScreenOfChampions();
 */
 /*
  const search = document.querySelector("#search");
-
  filtrar = ()=> {
    console.log(serch.value);
    
@@ -160,7 +158,6 @@ cleanScreenOfChampions();
 */
 
 /* para la info dentro del modal
-
 obj = {name: "Cat", age: 26}
 {name: "Cat", age: 26}
 for (const key in obj) {console.log(key)}
