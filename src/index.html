@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>Data Lovers</title>
+    <meta name="viewport"
+    content="width=device-width, user scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -13,26 +15,23 @@
 
     <nav>
       <!-- la barra de navegacion -->
-      <section class="bar">
-        <input type="search" name="Buscar" placeholder="Buscar" />
-        <input type=""/>
-        <input type="button"/>
+      <section class="navegation">
+        <input type="text" id: "search" class="buttons-nav" placeholder="Busca tu Campeon" value="" autocomplete="off"/>
+        <select class="buttons-nav" name="a-z" id="selectOrder">
+          <option value="A-Z">Ordenar A-Z</option>
+          <option value="Z-A">Ordenar Z-A</option>
+        </select>
+        <input type="button" id="reset" value="Mostrar Todo" class="buttons-nav"/>
       </section>
     </nav>
 
-    <section class="typChamp">
-      <button class="Asesino"> ASESINOS</button>
-      <!--en CSS: .button1 {border-radius: 12px;}-->
-      <button class="Luchador"> LUCHADORES</button>
-      <!--en CSS: .button2 {border-radius: 12px;}-->
-      <button class="Mago"> MAGOS</button>
-      <!--en CSS: .button3 {border-radius: 12px;}-->
-      <button class="Tirador"> TIRADORES</button>
-      <!--en CSS: .button4 {border-radius: 12px;}-->
-      <button class="Soporte"> SOPORTES</button>
-      <!--en CSS: .button5 {border-radius: 12px;}-->
-      <button class="Tanque"> TANQUES</button>
-      <!--en CSS: .button6 {border-radius: 12px;}-->
+    <section class="typ-champ">
+      <button id="assassin">ASESINOS</button>
+      <button id="fighter">LUCHADORES</button>
+      <button id="mage">MAGOS</button>
+      <button id="marksman">TIRADORES</button>
+      <button id="support">SOPORTES</button>
+      <button id="tank">TANQUES</button>
     </section>
 
     <div id="root"></div>
@@ -54,4 +53,3 @@
     <script src="main.js" type="module"></script>
   </body>
 </html>
-

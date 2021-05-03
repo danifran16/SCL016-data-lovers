@@ -1,4 +1,4 @@
-// estas funciones son de ejemplo
+// MODULARIZACION: Ordenar  Filtrar Y Calcular
 
 export const example = () => {
   return 'example';

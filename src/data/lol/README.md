@@ -1,46 +1,93 @@
-# League of Legends (LoL)
 
-League of Legends es un juego de estrategia que se juega en línea y que es
-multijugador. Tiene millones de jugadores en todo el mundo y, por ahora es uno
-de los _esports_ de referencia y que más público atraen.
-Durante el juego, los equipos trabajan juntos para lograr una
-condición de victoria que sucede al destruir la estructura central en la base
-del equipo enemigo.
+# PROYECTO DATA LOVERS.
+## League of Legends.
 
-En todos los modos de juego, los jugadores controlan
-personajes llamados **campeones**, que son elegidos o asignados en cada partida,
-y que tienen un conjunto de habilidades únicas. Es con esos campeones con los
-que se juega toda la partida. Para entender un poco más del juego puedes entrar
-a este [link](https://www.redbull.com/es-es/5-consejos-empezar-jugar-league-of-legends#targetText=Lo%20primero%20que%20tienes%20que,donde%20lucha%20cinco%20contra%20cinco).
+El Proyecto Data Lovers en el que trabajamos, es una data que contiene información sobre los personajes del juego "League of Legends"(Lol).Esta data se manipula de forma dinámica para que los usuarios puedan acceder por medio de los tipos y nombre del personaje, con el fin de observar su historia, apariencia y otros.
+Nuestro proceso de diseño se realizó una vez concluidas las siguientes herramientas:
+* Lluvia de ideas entre las creadoras, 
+* Preguntas a realizar a los usuarios en las entrevistas, 
+* Temas de diseño, colores a usar, etc.
+* Entrevistas de usuario, jugadores y no jugadores de LoL
 
-## Hallazgos
+## Historias de Usuario
 
-* Para poder elegir a los campeones que van a combatir en una partida, es
-  importante para el jugador de LoL poder saber cuál es el rol de cada campeón.
-* Adicionalmente al rol, cada campeón tiene distintos niveles de ataque, por
-  ejemplo dentro de los _tanques_ hay campeones con distintos niveles de ataque,
-  defensa, velocidad o poder. Es importante para el jugador de LoL poder saber
-  quiénes son los más poderosos o lo más defensivos, para poder elegir al mejor
-  grupo de campeones para una partida.estarán
-  en tu equipo y que lucharán contra el enemigo.
-* Los campeones tienen distintos tipos de habilidades, algunas inherentes
-  (básicas/principales) a ellos y otras (pasivas/secundarias) que pueden ser
-  adquiridas. En ambos casos, estas habilidades pueden ir desarrollándose hasta
-  alcanzar su máximo nivel.
-* Los campeones tienen distintos roles en los que se desempeñan:
+Tenemos las siguientes historias de usuario (5):
 
-  - Luchador: Especializado en combate cercano. Combinnan objetos de daño con
-    objetos de aguante. También se los conoce como _offtanks_.
-  - Tirador: Especializado en ataque a distancia. Popularmente conocido como
-    _AD Carry_ del inglés _attack damage carry_ o carreador de daño de ataque.
-  - Mago o Hechicero: Especializado en habilidades y daño mágico. Popularmente
-    conocido como _AP Carry_ del inglés _ability power carry_ o carreador de
-    poder de habilidad.
-  - Asesino: Especializado en emboscar al enemigo, atacando por sorpresa y
-    retirándose rápidamente. Su misión es eliminar al jugador más importante del
-    equipo enemigo (generalmente el tirador) aunque ello suponga morir él
-    también.
-  - Tanque: Especializado en resistencia. Su misión es absorber la mayor
-    cantidad de daño posible e iniciar las peleas.
-  - Apoyo o Soporte: Especializado en apoyar a su equipo y aportar visión en el
-    mapa mediante guardianes de visión (_wards_).
+![Historias de Usuario](src/images/hist_us.png)
+
+# PROCESO UX
+Elaboración de Prototipo: Tomando en cuenta la lluvia de ideas, entre las 3 comenzamos a hacer prototipos en papel, pensando en el usuario definido, debe ser una interfaz fácil de comprender, nada engorrosa, ya que muchos de los usuarios que no tienen mayor experiencia en equipos informáticos.
+	
+![Prototipo en Papel](src/images/prot_baja_todas.png)
+
+### AL CONSENSUAR LA MEJOR OPCIÓN, EL PROTOTIPO FINAL (EN PAPEL) ES EL SIGUIENTE:
+
+![Prototipo en Papel](src/images/prot_unido.png)
+
+### Página 1:
+Imagen del mapa de fondo con el texto BIENVENIDO INVOCADOR
+Botón MENÚ con los ítems: 
+Instrucciones del Juego donde solo se colocara un link, A jugar donde igual se colocara un Link.
+Campeones - League of Legends
+Crear cuenta en League of Legends | Latinoamérica Norte
+Input BUSCAR: donde podrán buscar directo por nombre
+Menú desplegable TIPOS DE CAMPEÓN: se abrirá un menú con los 6 tipos de campeón 
+* ASESINOS
+* LUCHADORES
+* MAGOS
+* TIRADORES
+* SOPORTES
+* TANQUES
+Menú desplegable POR ORDEN ALFABÉTICO.
+Al darle click a alguna opción se pasará a la segunda página donde se desplegará la opción seleccionada.
+En la segunda página se podrá elegir uno de los campeones pre seleccionados, la idea es que se agrande la imagen en primer plano con toda la información del campeón y el fondo se vea más opaco o borroso.
+	
+## Elaboración de Prototipo en Figma: 
+
+Figma nos permite trabajar solo de a pares, por lo que nos turnamos para trabajar 1 hora dos de nosotras cada vez para asegurarnos de que las 3 participemos en todos los procesos.
+El proceso de creación en Figma fue el siguiente:
+		
+![Prototipo Inicial)](src/images/prot_alta_prueba.png)
+
+### Nuestro prototipo final en Figma es el siguiente:
+
+![Prototipo Final)](src/images/prot_final.png)
+
+## Iterar con el Usuario: 
+Una vez listo el prototipo, se enviaron a los usuarios y se realizo la siguiente encuesta para iterar:
+* ¿Qué te parece el diseño de la página principal? 
+* ¿Qué le agregarías o le eliminarías? 
+Gusto el diseño y colores utilizados, realizaron sugerencias como: disminuir el tamaño del título (realizado), opacar un poco el fondo porque se confundía con los iconos (realizado), corrección de algunas mayúsculas y negritas (realizado)
+¿Qué te parece el diseño y cómo se muestran los campeones y su información? Gusto el diseño, la forma de mostrar la información y la sencillez de la página
+
+# PROCESO FRONT END
+
+Realizamos el siguiente diagrama para ordenar los pasos a seguir en cuanto a la manera de enfrentar al codigo:
+
+1.      Cargar página: (addEventListener) para cargar la página (onload)
+    a.      Mostrar fondo
+    b.      Mostrar botones
+    c.      Mostrar filtros
+    d.      Mostrar iconos de los campeones
+2.      Click en el botón tipo de campeón
+3.      Click en el campeón
+4.      Click en la equis para cerrar info del campeón
+5.      Usuario escribe en caja de texto y click en la lupa
+6.      Click en orden alfabético
+    a.      Menu desplegable con opciones A-Z y Z-A
+    b.      Mostrar campeones según filtro elegido
+7.      Click en Mostrar todo
+8.      Click en el link del footer
+9.      Traer la data
+
+# Objetivos de Aprendizaje y Conclusión
+
+Cumplimos con nuestro objetivo principal de manipular la data de forma dinámica para proporcionar los datos que escogimos. También cumplimos con objetivos técnicos respecto al código y a la estética del producto. Sin embargo nos faltó darle funcionalidad a la barra de "búsqueda"  realizar los test unitarios y modularizar.
+Estamos contentas con el resultado final, consideramos que el proceso de trabajo y colaboración fue positivo en general.
+La meta es cumplir la totalidad de los objetivos en el siguiente proyecto.
+
+
+
+
+
+
